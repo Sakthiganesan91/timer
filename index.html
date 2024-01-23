@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h2>Task Timer</h2>
+        <form action="" id="form" autocomplete="off">
+          <div class="label"><label for="task">Enter Your Task</label></div>
+          <div><input type="text" id="task" /></div>
+          <br />
+          <div class="label">
+            <label for="desc">Enter The Task Description</label>
+          </div>
+          <div><input type="text" id="desc" /></div>
+        </form>
+
+        <div class="stopwatch" style="margin-top: 14px">
+          <button id="start">...</button>
+          <div class="inner-stopwatch">
+            StopWatch
+            <section style="display: flex" id="section">00:00:00</section>
+          </div>
+        </div>
+      </div>
+      <div class="table">
+        <h2>Task Table</h2>
+        <h4 style="margin-top: 16px" id="empty">No Tasks Completed...</h4>
+        <table
+          id="table"
+          border="1"
+          style="border-collapse: collapse; visibility: hidden"
+        >
+          <tr class="header">
+            <th>Task</th>
+            <th>Decsription</th>
+            <th>Duration</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
